@@ -192,7 +192,7 @@ const MedicalHistory = () => {
     การตรวจทางกายภาพ: false,
   });
   return (
-    <div className="min-h-screen bg-gray-100 flex">
+    <div className="min-h-screen bg-gray-200 flex">
         <div className="w-64 bg-white border-r h-screen">
           <div className="flex items-center gap-2 p-4 border-b">
             <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white">
@@ -230,8 +230,8 @@ const MedicalHistory = () => {
             </div>
           </div>
         </div>
-        
-        <div className="p-6 w-screen">
+    
+        <div className="p-6 bg-white m-4 w-full rounded-md">
           <div className="p-6 flex-1">
             <h2 className="text-xl font-semibold mb-4">ประวัติการรักษา</h2>
 
@@ -248,7 +248,7 @@ const MedicalHistory = () => {
                 <label className="block text-sm mb-1">ชื่อ-นามสกุล</label>
                 <input type="text" className="w-full border rounded p-2" />
               </div>
-              <div>
+              {/* <div>
                 <label className="block text-sm mb-1">แผนก</label>
                 <select className="w-full border rounded p-2">
                   <option value="">ทั้งหมด</option>
@@ -258,7 +258,7 @@ const MedicalHistory = () => {
                   <option value="orthopedics">ออร์โธปิดิกส์</option>
                   <option value="obgyn">สูติ-นรีเวช</option>
                 </select>
-              </div>
+              </div> */}
               <div>
                 <label className="block text-sm mb-1 opacity-0">ค้นหา</label>
                 <button className="w-full px-6 py-2 bg-teal-500 text-white rounded hover:bg-teal-600">
@@ -276,10 +276,10 @@ const MedicalHistory = () => {
                 <label className="block text-sm mb-1">วันที่สิ้นสุด</label>
                 <input type="date" className="w-full border rounded p-2" />
               </div>
-              <div>
+              {/* <div>
                 <label className="block text-sm mb-1">แพทย์ผู้รักษา</label>
                 <input type="text" className="w-full border rounded p-2" />
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -463,6 +463,7 @@ const MedicalHistory = () => {
         </div>
   
     </div>
+
   );
 };
 
